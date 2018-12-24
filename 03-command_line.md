@@ -20,7 +20,18 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+1. show current working directory path: pwd
+2. creating a directory: mkdir mydirectory
+3. deleting a directory: rm -r mydirectory
+4. creating a file using `touch` command: touch myfile.txt
+5. deleting a file: rm myfile.txt
+6. renaming a file: mv myfile1.txt myfile2.txt
+7. listing hidden files: ls -a
+8. copying a file from one directory to another: cp /path/myfile.txt /new/path/
+9. find an expression in a file: grep "expression" myfile.txt
+10. sort entries in a file: sort myfile.txt
+11. remove identical entries on consecutive lines in a file: uniq myfile.txt
+12. find and replace expressions in a file: sed '/s/text/newtext/g' myfile.txt
 
 ---
 
@@ -35,7 +46,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+* `ls`: list non-hidden contents of a directory
+* `ls -a`: list all contents of a directory
+* `ls -l`: list contents of a directory with additional information
+* `ls -lh`: list contents of a directory with unit suffixes for file size information
+* `ls -lah`: list all contents of a directory with additional information and unit suffixes for file sizes
+* `ls -t`: list contents of a directory sorted by time modified
+* `ls -Glp`: list colorized contents of a directory with additional information and with slashes following directory names
 
 ---
 
@@ -43,7 +60,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+* `ls -r`: list contents of a directory in reverse order
+* `ls -R`: list contents of a directory and include subdirectory contents
+* `ls -u`: list contents of a directory sorted by file access time
+* `ls -x`: list contents of a directory displayed as rows instead of columns
+* `ls -m`: list contents of a directory as a comma-separated list
 
 ---
 
@@ -51,7 +72,4 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
-
+`xargs` converts standard input into arguments for a command. You can either pipe standard input to it or use it alone before a command, which will allow you to type standard input and pass it as an argument to the command. Pressing `ctrl+d` tells `xargs` that you are done passing arguments.
