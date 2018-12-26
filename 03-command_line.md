@@ -74,4 +74,4 @@ What does `xargs` do? Give an example of how to use it.
 
 `xargs` converts standard input into arguments for a command. You can either pipe standard input to it or use it alone before a command, which will allow you to type standard input and pass it as an argument to the command. Pressing `ctrl+d` tells `xargs` that you are done passing arguments.
 
-One way to use `xargs` is for removing a list of files in a directory by typing `find /path/to/directory -type f -print / xargs rm`. This pipes the standard out of the `find` command as an argument to the `rm` command, which in this case would be a list of files. 
+One way to use `xargs` is for removing a list of files in a directory by typing `find /path/to/directory -type f -print | xargs rm`. This pipes the standard out of the `find` command as an argument to the `rm` command, which in this case would be a list of files. 
