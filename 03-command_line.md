@@ -27,7 +27,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 5. deleting a file: `rm myfile.txt`
 6. renaming a file: `mv myfile1.txt myfile2.txt`
 7. listing hidden files: `ls -a`
-8. copying a file from one directory to another: `cp /path/myfile.txt /new/path/``
+8. copying a file from one directory to another: `cp /path/myfile.txt /new/path/`
 9. find an expression in a file: `grep "expression" myfile.txt`
 10. sort entries in a file: `sort myfile.txt`
 11. remove identical entries on consecutive lines in a file: `uniq myfile.txt`
@@ -73,3 +73,5 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 What does `xargs` do? Give an example of how to use it.
 
 `xargs` converts standard input into arguments for a command. You can either pipe standard input to it or use it alone before a command, which will allow you to type standard input and pass it as an argument to the command. Pressing `ctrl+d` tells `xargs` that you are done passing arguments.
+
+One way to use `xargs` is for removing a list of files in a directory by typing `find /path/to/directory -type f -print / xargs rm`. This pipes the standard out of the `find` command as an argument to the `rm` command, which in this case would be a list of files. 
