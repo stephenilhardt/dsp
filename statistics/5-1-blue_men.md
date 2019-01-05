@@ -13,8 +13,8 @@ df = brfss.ReadBrfss()
 men = df.query('sex==1')
 heights = men['htm3']
 
-mu = 178.0
-sigma = 7.7
+mu = heights.mean()
+sigma = heights.std()
 
 cdf_low = scipy.stats.norm.cdf(177.8, mu, sigma)
 cdf_high = scipy.stats.norm.cdf(185.42, mu, sigma)
@@ -24,6 +24,6 @@ print(cdf_high)
 
 print(cdf_high - cdf_low)
 ```
-The CDF lower bound is 0.48963902786483265 and the CDF upper bound is 0.8323858654963063, which taking the difference means that the probability of a randomly selected man being eligible for Blue Man Group is 0.3427468376314737, or around 34%. 
+The CDF lower bound is 0.48625170584113814 and the CDF upper bound is 0.829482582277679, which taking the difference means that the probability of a randomly selected man being eligible for Blue Man Group is 0.3432308764365409, or around 34%. 
 
 Since CDF is a measure of the sum of the probability distribution up to a certain value, we can bound the two sides of the Blue Man Group eligibility probability distribution by converting the eligibility requirements from feet to centimeters and calculating the CDF for those two values. All values inside those bounds are eligible, and values outside of those bounds are not.  
