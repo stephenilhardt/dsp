@@ -95,6 +95,7 @@ prob_twin = prob_frat + prob_iden
 print((1 * prob_iden) / prob_twin)
 ```
 You are looking for the probability of being an identical twin given that you are a twin. Bayes’ Theorem says that the way to find this is to multiply the opposite conditional probability by the probability of condition A and divide by the probability of condition B. Since the probability of being a twin given that you are an identical twin is one, the formula is simply dividing the probability of being an identical twin by the probability of being a twin, which is the summation of the probability of being an identical twin and the probability of being a fraternal twin. In this case, that means that the probability of being an identical twin given that you are a twin is 0.29411764705882354, or about 29%. 
+
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
