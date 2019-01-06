@@ -99,7 +99,7 @@ print(prob_elvis_iden)
 
 You are looking for the probability of being an identical twin given that you are a twin. Bayes’ Theorem says that the way to calculate this is to multiply the conditional that you are a twin given that you are an identical twin by the probability of being an identical twin and then dividing by the probability of being a twin. Calculating the probability that you are a twin involves multiplying the probability that you are an identical twin by the probability of being a twin given that you are an identical twin and then adding that to the product of multiplying the probability that you are not an identical twin by the probability of being a twin given that you are not an identical twin. In this case, the probability of being a twin given that you are an identical twin is obviously equal to one and the probability that you are a twin given that you are not an identical twin is equal to the difference  of subtracting the probability of being an identical twin from the probability of being a twin. The probability of not being an identical twin is equal to one minus the probability of being an identical twin. Putting this all together in the formula shows that the probability of being an identical twin given that you are a twin is 0.29481132075471694, or about 29.5%.
 
-Bayes formula:
+Bayes formula (enter into LaTex):
 
 $P(Identical|Twin) = \frac{P(Twin|Identical)*P(Identical)}{P(Identical)*P(Twin|Identical)+P(\neg Identical)*P(Twin|\neg Identical)}$
 
