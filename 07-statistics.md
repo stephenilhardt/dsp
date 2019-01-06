@@ -96,14 +96,23 @@ prob_elvis_iden = (1 * prob_iden) / ((1 * prob_iden) + (1 - prob_iden) * (prob_t
 
 print(prob_elvis_iden)
 ```
-You are looking for the probability of being an identical twin given that you are a twin. Bayes’ Theorem says that the way to calculate this is to multiply the conditional that you are a twin given that you are an identical twin by the probability of being an identical twin and then dividing by the probability of being a twin. Calculating the probability that you are a twin involves multiplying the probability that you are an identical twin by the probability of being a twin given that you are an identical twin and then adding that to the product of multiplying the probability that you are not an identical twin by the probability of being a twin given that you are not an identical twin. In this case, the probability of being a twin given that you are an identical twin is obviously equal to one and the probability that you are a twin given that you are not an identical twin is equal to the difference  of subtracting the probability of being an identical twin from the probability of being a twin. The probability of not being an identical twin is equal to one minus the probability of being an identical twin. Putting this all together in the formula shows that the probability of being an identical twin given that you are a twin is 0.29481132075471694, or about 29.5%. 
+
+You are looking for the probability of being an identical twin given that you are a twin. Bayes’ Theorem says that the way to calculate this is to multiply the conditional that you are a twin given that you are an identical twin by the probability of being an identical twin and then dividing by the probability of being a twin. Calculating the probability that you are a twin involves multiplying the probability that you are an identical twin by the probability of being a twin given that you are an identical twin and then adding that to the product of multiplying the probability that you are not an identical twin by the probability of being a twin given that you are not an identical twin. In this case, the probability of being a twin given that you are an identical twin is obviously equal to one and the probability that you are a twin given that you are not an identical twin is equal to the difference  of subtracting the probability of being an identical twin from the probability of being a twin. The probability of not being an identical twin is equal to one minus the probability of being an identical twin. Putting this all together in the formula shows that the probability of being an identical twin given that you are a twin is 0.29481132075471694, or about 29.5%.
+
+Bayes formula:
+
+\\(P(Identical|Twin) = \frac{P(Twin|Identical)*P(Identical)}{P(Identical)*P(Twin|Identical)+P(\neg Identical)*P(Twin|\neg Identical)}\\)
+
+\\(P(Identical|Twin) = \frac{1*P(Identical)}{P(Identical)*1+(1- P(Identical))*(P(Twin)-P(Identical))}\\)
 
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Bayesian statistics uses prior probabilities to compute posterior probabilities for a range of events and outcomes. Frequentist statistics considers probabilities to be long run frequencies in which events occur. In practice, this means that Bayesian statistics will look take a null hypothesis and consider whether an alternative hypothesis makes more sense or is more explanatory than the null hypothesis, while frequentist statistics will consider whether to accept or reject the null hypothesis by considering data to be a sample from a population and questioning the probability of this sample appearing by chance, using this probability to consider the viability of the null hypothesis. 
+
+![Frequentist vs. Bayesian](https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png)
 
 ---
 
