@@ -101,9 +101,9 @@ You are looking for the probability of being an identical twin given that you ar
 
 Bayes formula:
 
-\\(P(Identical|Twin) = \frac{P(Twin|Identical)*P(Identical)}{P(Identical)*P(Twin|Identical)+P(\neg Identical)*P(Twin|\neg Identical)}\\)
+$P(Identical|Twin) = \frac{P(Twin|Identical)*P(Identical)}{P(Identical)*P(Twin|Identical)+P(\neg Identical)*P(Twin|\neg Identical)}$
 
-\\(P(Identical|Twin) = \frac{1*P(Identical)}{P(Identical)*1+(1- P(Identical))*(P(Twin)-P(Identical))}\\)
+$P(Identical|Twin) = \frac{1*P(Identical)}{P(Identical)*1+(1- P(Identical))*(P(Twin)-P(Identical))}$
 
 ---
 
